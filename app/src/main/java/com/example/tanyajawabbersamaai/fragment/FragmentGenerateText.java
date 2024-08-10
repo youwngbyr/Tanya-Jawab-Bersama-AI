@@ -94,7 +94,7 @@ public class FragmentGenerateText extends Fragment {
     //method untuk memanggil function Gemini AI
     //jangan lupa membuat API KEY terlebih dahulu
     public void getResultGeminiAPI(String inputText) {
-        GenerativeModel generativeModel = new GenerativeModel("gemini-pro",
+        GenerativeModel generativeModel = new GenerativeModel("gemini-1.5-flash",
                 "API_KEY");
 
         GenerativeModelFutures modelFutures = GenerativeModelFutures.from(generativeModel);
